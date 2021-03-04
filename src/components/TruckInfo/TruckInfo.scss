@@ -1,0 +1,13 @@
+.Truckitem {
+  width: 550px;
+  padding: 10px;
+  // background-color: rgba(111, 41, 97, 0.3);
+  border: 1px solid rgba(182, 177, 181, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+  height: 190px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 0.5rem;
+  box-shadow: blue($color: #000000);
+}
