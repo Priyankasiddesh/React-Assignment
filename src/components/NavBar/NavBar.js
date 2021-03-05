@@ -7,27 +7,27 @@ const navBar = () => (
     <ul>
       <li>
         <a className="active" href="#home">
-          Home
+          All
         </a>
       </li>
       <li>
-        <a href="#news">News</a>
+        <a href="#news">FTL</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact">LCL</a>
       </li>
       <li>
-        <a href="#news">News</a>
+        <a href="#news">Courier</a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Container</a>
       </li>
     </ul>
     <div className="navbar">
       <a className="active" href="#home">
-        Home
+        Inbound
       </a>
-      <a href="#news">News</a>
+      <a href="#news">OutBound</a>
     </div>
   </div>
 );

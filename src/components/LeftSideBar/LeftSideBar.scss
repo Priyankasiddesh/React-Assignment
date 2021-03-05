@@ -1,12 +1,15 @@
 .SideBar {
   //margin-top: 10px;
-  width: 150px;
+  width: 80px;
   height: 530px;
   background-color: blueviolet;
   color: white;
 }
 .SubComponent {
-  padding: 30px;
+  //padding: 20px;
+  padding-top: 50px;
   text-align: center;
   font-weight: bold;
+  align-items: center;
+  font-size: 0.8rem;
 }

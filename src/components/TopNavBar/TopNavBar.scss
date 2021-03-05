@@ -22,7 +22,7 @@
 
 .topnav a.active {
   background-color: #2196f3;
-  width: 150px;
+  width: 80px;
 
   color: white;
 }
@@ -30,7 +30,7 @@
 .topnav .search-container {
   float: none;
   padding: 6px;
-  border: 1px solid white;
+  border: 0.5px solid white;
 }
 
 .topnav input[type="text"] {
@@ -55,6 +55,12 @@
 .topnav .search-container button:hover {
   background: #ccc;
   border: 1px solid white;
+}
+
+.select {
+  width: 360px;
+  padding: 15px;
+  margin-left: 1px;
 }
 
 @media screen and (max-width: 600px) {
