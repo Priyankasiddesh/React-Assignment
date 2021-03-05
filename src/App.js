@@ -1,20 +1,27 @@
 import React, { Component } from "react";
-import Routes from "./Routes";
 import Layout from "./components/Layout/Layout";
-import TrackBuilder from "./containers/TrackBuilder/TrackBuilder";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import DashBoard from "./components/LeftSideBar/DashBoard";
+import Trips from "./components/LeftSideBar/Trips";
+import Tracking from "./components/LeftSideBar/Tracking";
+import Transporters from "./components/LeftSideBar/Transporters";
+import Analytics from "./components/LeftSideBar/Analytics";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Router>
-          <Layout>
-            <TrackBuilder></TrackBuilder>
-            <Routes />
-          </Layout>
-        </Router>
-      </div>
+      <Router>
+        <div>
+          <Switch>
+            <Route path="/" exact component={Layout} />
+            <Route path="/DashBoard" component={DashBoard} />
+            <Route path="/Trips" component={Trips} />
+            <Route path="/Tracking" component={Tracking} />
+            <Route path="/Transporters" component={Transporters} />
+            <Route path="/Analytics" component={Analytics} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
