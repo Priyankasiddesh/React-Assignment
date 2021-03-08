@@ -1,19 +1,25 @@
 ul {
-  width: 720px;
+  width: 770px;
   list-style-type: none;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 20px;
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid rgb(223, 218, 218);
+  height: 35px;
 }
-
+.menubar {
+  display: flex;
+  font-size: 1rem;
+}
 li {
   float: left;
   width: 135px;
+
   border-right: 1px solid #bbb;
+  color: rgb(116, 112, 112);
 }
 
 li:last-child {
@@ -22,9 +28,9 @@ li:last-child {
 
 li a {
   display: block;
-  color: black;
+  color: rgb(148, 128, 236);
   text-align: center;
-  padding: 14px 16px;
+  padding: 06px 25px;
   text-decoration: none;
 }
 
@@ -33,32 +39,42 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: blue;
+  background-color: rgb(71, 73, 163);
+  color: white;
 }
 .navbar {
   //overflow: hidden;
   background-color: white;
-  border: 1px solid black;
-  width: 355px;
+  border: 1px solid rgb(223, 218, 218);
+  width: 375px;
   padding: 0;
   margin-top: 20px;
   margin-left: 10px;
   margin-bottom: 15px;
+  height: 35px;
+  color: rgb(148, 128, 236);
 }
 
 .navbar a {
   width: 170px;
   float: left;
   display: block;
-  color: black;
+
   text-align: center;
-  padding: 14px 16px;
+  padding: 06px 25px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
   border-right: 1px solid #bbb;
+  height: 35px;
 }
 
 .navbar a:hover {
   background: grey;
-  color: black;
+  color: white;
+}
+a {
+  /* color: #007bff; */
+  text-decoration: none;
+  color: rgb(148, 128, 236);
+  background-color: transparent;
 }

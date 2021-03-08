@@ -1,16 +1,51 @@
 .Truckitem {
-  width: 550px;
+  width: 575px;
   padding: 10px;
   // background-color: rgba(111, 41, 97, 0.3);
   border: 1px solid rgba(182, 177, 181, 0.5);
   display: inline-block;
   vertical-align: middle;
   height: 190px;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 10px;
+  margin-top: 15px;
   border-radius: 0.5rem;
   box-shadow: blue($color: #000000);
+  color: rgb(116, 112, 112);
+  font-size: 0.8rem;
 }
 .verticalLine {
   border-left: 1px solid grey;
+  margin-left: 180px;
+}
+.title {
+  font-size: 1.2rem;
+  float: left;
+  font-weight: bold;
+}
+#title {
+  color: rgb(214, 94, 94);
+}
+.value {
+  font-size: 0.8rem;
+  float: right;
+  font-weight: bold;
+}
+.truckinfo {
+  margin-top: 50px;
+}
+.truckdetails {
+  float: left;
+  margin-left: 0;
+}
+
+div.a {
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: right; /* For Firefox prior 58.0 */
+  text-align-last: left;
+}
+.trucktext {
+  margin-left: 10px;
+}
+.driverdetails {
+  margin-top: 15px;
 }

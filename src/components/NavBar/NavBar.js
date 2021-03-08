@@ -1,9 +1,8 @@
 import React from "react";
 import "./NavBar.scss";
-import Auxiliary from "../../hoc/Auxiliary";
 
 const navBar = () => (
-  <div style={{ display: "flex" }}>
+  <div className="menubar">
     <ul>
       <li>
         <a className="active" href="#home">
