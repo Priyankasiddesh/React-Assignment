@@ -13,7 +13,7 @@ const LeftSideMenu = (props) => {
     <Auxiliary>
       <div className="SideBar">
         <Link to="/DashBoard">
-          <div className="SubComponent">
+          <div className="SubComponent" id="active">
             <SpeedIcon />
             <div>DashBoard</div>
           </div>

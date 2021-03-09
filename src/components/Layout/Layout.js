@@ -20,6 +20,7 @@ class Layout extends Component {
       lastKnownDetails: "Kolahpur",
     };
   }
+
   render() {
     return (
       <Auxiliary>

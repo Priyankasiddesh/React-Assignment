@@ -15,3 +15,13 @@
   font-size: 0.6rem;
   color: white;
 }
+.SubComponent:active {
+  background-color: blue;
+}
+.SubComponent:hover {
+  background-color: darkblue;
+}
+// #active {
+//   background-color: blue;
+//   color: white;
+// }
