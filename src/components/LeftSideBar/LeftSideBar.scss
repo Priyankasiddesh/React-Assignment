@@ -8,20 +8,26 @@
 }
 .SubComponent {
   //padding: 20px;
-  padding-top: 40px;
+  padding-top: 25px;
   text-align: center;
   font-weight: bold;
   align-items: center;
   font-size: 0.6rem;
   color: white;
 }
-.SubComponent:active {
+
+.SubComponent div {
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: block;
+}
+.SubComponent div:hover {
   background-color: blue;
+  color: white;
 }
-.SubComponent:hover {
+.SubComponent div:active,
+.SubComponent div.active {
   background-color: darkblue;
+  color: white;
 }
-// #active {
-//   background-color: blue;
-//   color: white;
-// }
