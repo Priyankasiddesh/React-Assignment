@@ -6,61 +6,60 @@ import TrainIcon from "@material-ui/icons/Train";
 import MyLocationIcon from "@material-ui/icons/MyLocation";
 import GroupIcon from "@material-ui/icons/Group";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
-
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const LeftSideMenu = (props) => {
   return (
     <Auxiliary>
       <div className="SideBar">
-        <Link to="/DashBoard">
-          <div className="SubComponent">
-            <div className={props.active ? "active" : null}>
+        <div className="SubComponent">
+          <NavLink to="/dashBoard" activeClassName="active">
+            <div>
               <SpeedIcon />
               <div>DashBoard</div>
             </div>
-          </div>
-        </Link>
-        <Link to="/Trips">
-          <div className="SubComponent">
+          </NavLink>
+        </div>
+        <div className="SubComponent">
+          <NavLink to="/trips" activeClassName="active">
             <div>
               <TrainIcon />
               <div>Trips</div>
             </div>
-          </div>
-        </Link>
-        <Link to="/Tracking">
-          <div className="SubComponent">
+          </NavLink>
+        </div>
+        <div className="SubComponent">
+          <NavLink to="/tracking" activeClassName="active">
             <div>
               <MyLocationIcon />
               <div>Tracking</div>
             </div>
-          </div>
-        </Link>
-        <Link to="/Transporters">
-          <div className="SubComponent">
+          </NavLink>
+        </div>
+        <div className="SubComponent">
+          <NavLink to="/transporters" activeClassName="active">
             <div>
               <GroupIcon />
               <div>Transporters</div>
             </div>
-          </div>
-        </Link>
-        <Link to="/Analytics">
-          <div className="SubComponent">
+          </NavLink>
+        </div>
+        <div className="SubComponent">
+          <NavLink to="/analytics" activeClassName="active">
             <div>
               <AssessmentIcon />
               <div>Analytics</div>
             </div>
-          </div>
-        </Link>
-        <Link to="/">
-          <div className="SubComponent">
+          </NavLink>
+        </div>
+        <div className="SubComponent">
+          <NavLink to="/settings" activeClassName="active">
             <div style={{ marginTop: "130px" }}>
               <Brightness7Icon />
               <div>Settings</div>
             </div>
-          </div>
-        </Link>
+          </NavLink>
+        </div>
       </div>
     </Auxiliary>
   );

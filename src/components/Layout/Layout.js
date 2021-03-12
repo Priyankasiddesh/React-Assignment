@@ -14,20 +14,23 @@ class Layout extends Component {
     this.state = {
       id: 1,
       transporter: "VRL Logistics",
-      details: "Rohan(91-9972259976)",
+      details: "Rohan (+91-9972259976)",
       from: "bangalore",
       to: "mumbai",
-      lastKnownDetails: "Kolahpur",
+      lastKnownDetails: "Kolahpur (26-Oct-2017,11:12 PM)",
+      isSelected: false,
     };
+    this.toggle = this.toggle.bind(this);
   }
-
+  toggle(e) {
+    this.setState({
+      isSelected: !this.state.isSelected,
+    });
+  }
   render() {
     return (
       <Auxiliary>
-        <TopNavBar />
         <div className="Content">
-          <LeftSideMenu />
-
           <span className="span">
             <NavBar />
             <SearchField />

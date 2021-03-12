@@ -1,13 +1,19 @@
 import React from "react";
 import "./TruckInfo.scss";
+import WarningIcon from "@material-ui/icons/Warning";
+import TrainOutlinedIcon from "@material-ui/icons/TrainOutlined";
 
 const truckInfo = (props) => (
   <div className="TruckInfoContent">
-    <div className="Truckitem">
-      <div className="title" id="title">
+    <div className="Truckitem ">
+      <div className="title " id="title">
+        <WarningIcon />
         Missing Truck
       </div>
-      <div className="value">Value:5Cr</div>
+      <div className="value">
+        Value:
+        <div className="valuenum">5Cr</div>
+      </div>
       <div className="truckinfo">
         <div style={{ display: "flex" }}>
           <div className="a">
@@ -49,8 +55,13 @@ const truckInfo = (props) => (
       </div>
     </div>
     <div className="Truckitem">
-      <div className="title">Detention Truck</div>
-      <div className="value">Value:5Cr</div>
+      <div className="title">
+        <TrainOutlinedIcon />
+        Detention Truck
+      </div>
+      <div className="value">
+        Value:<div className="valuenum">5Cr</div>
+      </div>
       <div className="truckinfo">
         <div style={{ display: "flex" }}>
           <div className="a">

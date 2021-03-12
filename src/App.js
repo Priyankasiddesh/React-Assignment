@@ -6,19 +6,25 @@ import Trips from "./components/LeftSideBar/Trips";
 import Tracking from "./components/LeftSideBar/Tracking";
 import Transporters from "./components/LeftSideBar/Transporters";
 import Analytics from "./components/LeftSideBar/Analytics";
+import TopNavBar from "./components/TopNavBar/TopNavBar";
+import LeftSideMenu from "./components/LeftSideBar/LeftSideMenu";
+import Settings from "./components/LeftSideBar/Settings";
 
 class App extends Component {
   render() {
     return (
       <Router>
+        <TopNavBar />
+        <LeftSideMenu />
         <div>
           <Switch>
             <Route path="/" exact component={Layout} />
-            <Route path="/DashBoard" component={DashBoard} />
-            <Route path="/Trips" component={Trips} />
-            <Route path="/Tracking" component={Tracking} />
-            <Route path="/Transporters" component={Transporters} />
-            <Route path="/Analytics" component={Analytics} />
+            <Route path="/dashBoard" component={DashBoard} />
+            <Route path="/trips" component={Trips} />
+            <Route path="/tracking" component={Tracking} />
+            <Route path="/transporters" component={Transporters} />
+            <Route path="/analytics" component={Analytics} />
+            <Route path="/settings" component={Settings} />
           </Switch>
         </div>
       </Router>

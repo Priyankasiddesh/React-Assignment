@@ -1,13 +1,12 @@
 .SideBar {
-  //margin-top: 10px;
   width: 65px;
   height: 530px;
   background-color: rgb(71, 73, 163);
   color: white;
   margin-left: 5px;
+  position: fixed;
 }
 .SubComponent {
-  //padding: 20px;
   padding-top: 25px;
   text-align: center;
   font-weight: bold;
@@ -16,18 +15,20 @@
   color: white;
 }
 
-.SubComponent div {
+.SubComponent a {
   color: white;
   text-decoration: none;
   box-sizing: border-box;
   display: block;
 }
-.SubComponent div:hover {
-  background-color: blue;
-  color: white;
-}
-.SubComponent div:active,
-.SubComponent div.active {
+
+.SubComponent a:hover {
   background-color: darkblue;
   color: white;
+}
+
+.SubComponent .active {
+  background-color: darkblue;
+  color: white;
+  font-weight: bold;
 }
