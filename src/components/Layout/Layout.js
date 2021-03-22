@@ -8,8 +8,8 @@ import TruckInfo from "../../components/TruckInfo/TruckInfo";
 import SearchField from "../../components/SearchComponent/SearchField";
 import NavBar from "../../components/NavBar/NavBar";
 import { Component } from "react";
-import { Provider } from "react-redux";
-import store from "../../redux/store";
+// import { Provider } from "react-redux";
+// import Store from "../../redux/store";
 
 class Layout extends Component {
   constructor(props) {
@@ -32,18 +32,18 @@ class Layout extends Component {
   }
   render() {
     return (
-      <Provider store={store}>
-        <Auxiliary>
-          <div className="Content">
-            <span className="span">
-              <NavBar />
-              <SearchField />
-              <TrackCards />
-              <TruckInfo />
-            </span>
-          </div>
-        </Auxiliary>
-      </Provider>
+      //<Provider store={Store}>
+      <Auxiliary>
+        <div className="Content">
+          <span className="span">
+            <NavBar />
+            <SearchField />
+            <TrackCards />
+            <TruckInfo />
+          </span>
+        </div>
+      </Auxiliary>
+      // </Provider>
     );
   }
 }

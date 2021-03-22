@@ -7,18 +7,22 @@ import TrainOutlinedIcon from "@material-ui/icons/TrainOutlined";
 import { useEffect } from "react";
 
 console.log("use effect", fetchDetails());
-const TruckInfo = ({ data, fetchDetails }) => {
+const TruckInfo = ({ userdata, fetchDetails }) => {
+  console.log("helooooooooooooo", typeof userdata);
   useEffect(() => {
     //console.log("use effect", fetchDetails());
     fetchDetails();
   }, [fetchDetails]);
+  console.log("helooooooooooooo", userdata);
 
   return (
-    data &&
-    data.data &&
-    data.data.map((data) => {
+    // Object.isObject(userdata) &&
+    // userdata.data.map((data) => {
+    Object.keys(userdata).map((keyName, i) => {
+      console.log("inside map", userdata);
+
       return (
-        <div className="TruckInfoContent">
+        <div className="TruckInfoContent" key={i}>
           <div className="Truckitem ">
             <div className="title " id="title">
               <WarningIcon />
@@ -33,34 +37,34 @@ const TruckInfo = ({ data, fetchDetails }) => {
                 <div className="a">
                   <div>
                     <b>Trip id:</b>
-                    {data.id}
+                    {keyName.id}
                   </div>
-                  <div>
+                  <div key={keyName.transporter}>
                     <b>Transporter:</b>
-                    {data.transporter}
+                    {keyName.transporter}
                   </div>
 
                   <div className="driverdetails">
                     <b>Driver details:</b>
-                    <div>{data.details}</div>
+                    <div>{keyName.details}</div>
                   </div>
                 </div>
                 <div className="a">
                   <div className="verticalLine">
                     <div className="trucktext">
                       <b>From:</b>
-                      {data.from}
+                      {keyName.from}
                     </div>
                     <div className="trucktext">
                       <b>To:</b>
-                      {data.to}
+                      {keyName.to}
                     </div>
                   </div>
                   <div style={{ marginTop: "15px" }}>
                     <div className="verticalLine">
                       <div className="trucktext">
                         <b>Last Known Details:</b>
-                        <div>{data.lastKnownDetails}</div>
+                        <div>{keyName.lastKnownDetails}</div>
                       </div>
                     </div>
                   </div>
@@ -81,34 +85,34 @@ const TruckInfo = ({ data, fetchDetails }) => {
                 <div className="a">
                   <div>
                     <b>Trip id:</b>
-                    {data.id}
+                    {keyName.id}
                   </div>
                   <div>
                     <b>Transporter:</b>
-                    {data.transporter}
+                    {keyName.transporter}
                   </div>
 
                   <div className="driverdetails">
                     <b>Driver details:</b>
-                    <div>{data.details}</div>
+                    <div>{keyName.details}</div>
                   </div>
                 </div>
                 <div className="a">
                   <div className="verticalLine">
                     <div className="trucktext">
                       <b>From:</b>
-                      {data.from}
+                      {keyName.from}
                     </div>
                     <div className="trucktext">
                       <b>To:</b>
-                      {data.to}
+                      {keyName.to}
                     </div>
                   </div>
                   <div style={{ marginTop: "15px" }}>
                     <div className="verticalLine">
                       <div className="trucktext">
                         <b>Last Known Details:</b>
-                        <div> {data.lastKnownDetails}</div>
+                        <div> {keyName.lastKnownDetails}</div>
                       </div>
                     </div>
                   </div>
@@ -125,7 +129,7 @@ const TruckInfo = ({ data, fetchDetails }) => {
 const mapStateToProps = (state) => {
   console.log("this is state", state);
   return {
-    data: state.data,
+    userdata: state.transportReducer,
   };
 };
 

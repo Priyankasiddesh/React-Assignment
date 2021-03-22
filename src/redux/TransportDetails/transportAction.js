@@ -1,12 +1,13 @@
 import axios from "axios";
 import { FETCH_TRANSPORT_SUCCESS } from "./transportTypes";
 
-export const fetchTransportSuccess = (data) => {
+const fetchTransportSuccess = (data) => {
   return {
     type: FETCH_TRANSPORT_SUCCESS,
     payload: data,
   };
 };
+export default fetchTransportSuccess;
 
 export const fetchDetails = () => {
   return (dispatch) => {

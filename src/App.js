@@ -9,6 +9,8 @@ import Analytics from "./components/LeftSideBar/Analytics";
 import TopNavBar from "./components/TopNavBar/TopNavBar";
 import LeftSideMenu from "./components/LeftSideBar/LeftSideMenu";
 import Settings from "./components/LeftSideBar/Settings";
+// import { Provider } from "react-redux";
+// import Store from "./redux/store";
 
 class App extends Component {
   render() {

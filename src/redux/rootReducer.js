@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import { transportReducer } from "./TransportDetails/transportReducer";
+import transportReducer from "./TransportDetails/transportReducer";
 
 const rootReducer = combineReducers({
-  transportReducer,
+  transportReducer: transportReducer,
 });
 export default rootReducer;

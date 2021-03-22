@@ -1,4 +1,5 @@
-const { FETCH_TRANSPORT_SUCCESS } = require("./transportTypes");
+// const { FETCH_TRANSPORT_SUCCESS } = require("./transportTypes");
+import { FETCH_TRANSPORT_SUCCESS } from "./transportTypes";
 
 const initialState = {
   data: [],
