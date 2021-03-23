@@ -11,8 +11,8 @@ const topNavBar = () => (
       t <p>EG</p>
     </div>
 
-    <select name="select transporter" className="select">
-      <option value="volvo">Volvo</option>
+    <select name="select transporter" className="select" value="Tracking">
+      <option value="Tracking">Tracking</option>
       <option value="saab">Saab</option>
       <option value="fiat">Fiat</option>
     </select>

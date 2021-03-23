@@ -6,17 +6,17 @@ class SearchField extends Component {
       <div>
         <form>
           <select name="select transporter" className="Search">
-            <option value="volvo">Volvo</option>
+            <option value="volvo">Select Transporter</option>
             <option value="saab">Saab</option>
             <option value="fiat">Fiat</option>
           </select>
           <select name="select plant/depot" className="Search">
-            <option value="Bangalore">Bangalore</option>
+            <option value="Bangalore">Select plant/depot</option>
             <option value="Mysore">Mysore</option>
             <option value="Mandya">Mandya</option>
           </select>
           <select name="select Item" className="Search">
-            <option value="parcel">Parcel</option>
+            <option value="parcel">Select Item</option>
             <option value="post">Post</option>
             <option value="courier">Courier</option>
           </select>
